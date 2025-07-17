@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Information Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for Enhancements */
+        /* Hero Section */
+        .hero-section {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            padding: 12px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about-section, .services-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .about-section h2, .services-section h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-section p, .services-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Services Section */
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background-color: #333;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .testimonial-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-card p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card h4 {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Statistics Section */
+        .statistics-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .statistics-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .statistics-cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .statistics-card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .statistics-card h3 {
+            font-size: 28px;
+            color: #4CAF50;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service-cards, .testimonial-cards, .statistics-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Data Information Management System</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="patient-registration.html">Patient Registration</a></li>
+            <li><a href="appointment-booking.html">Appointment Booking</a></li>
+            <li><a href="billing.html">Billing</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h2>Welcome to Our Health Management System</h2>
+    <p>Managing health data has never been easier. Register patients, book appointments, and handle billing with ease.</p>
+    <a href="patient-registration.html" class="cta-button">Get Started</a>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <h2>About the System</h2>
+    <p>Our Health Data Information Management System provides an easy-to-use interface for hospitals and healthcare providers. The system streamlines patient registration, appointment scheduling, and billing, allowing healthcare professionals to focus more on patient care.</p>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <h2>Our Services</h2>
+    <p>Explore the key features of our system that will help you manage health data effectively and efficiently.</p>
+
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Patient Registration</h3>
+            <p>Quickly register patients with necessary details, enabling faster treatment and management.</p>
+        </div>
+        <div class="service-card">
+            <h3>Appointment Booking</h3>
+            <p>Book and manage patient appointments for various healthcare professionals with ease.</p>
+        </div>
+        <div class="service-card">
+            <h3>Billing</h3>
+            <p>Generate and manage bills for patients after consultation or treatment with automatic calculations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>"This system has significantly improved our hospital's efficiency. Patient registrations and billing are now much faster!"</p>
+            <h4>- Dr. John, Cardiologist</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"The appointment scheduling system has saved us so much time. Patients can book appointments seamlessly."</p>
+            <h4>- Dr. Jane, Neurologist</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="statistics-section">
+    <h2>System Performance</h2>
+    <p>Here are some key statistics that highlight the effectiveness of our Health Management System.</p>
+
+    <div class="statistics-cards">
+        <div class="statistics-card">
+            <h3>5000+</h3>
+            <p>Registered Patients</p>
+        </div>
+        <div class="statistics-card">
+            <h3>2000+</h3>
+            <p>Appointments Booked</p>
+        </div>
+        <div class="statistics-card">
+            <h3>3000+</h3>
+            <p>Bills Generated</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Health Data Management System</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
